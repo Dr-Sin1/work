@@ -1,0 +1,37 @@
+digraph sample{
+   idm1634013936 [label = "SgSourceFile|filename=var-replace-simple.f90|language=4|format=2", shape=record, style=rounded]; 
+      idm1634013552 [label = "SgGlobal", shape=record, style=rounded]; idm1634013936 -> idm1634013552; 
+      idm1634014064 [label = "SgProcedureHeaderStatement|name=SAMPLE02|subprogram_kind=2|result_name=SAMPLE02", shape=record, style=rounded]; idm1634013552 -> idm1634014064; 
+      idm1634015984 [label = "SgTypeVoid", shape=record, style=rounded]; idm1634014064 -> idm1634015984; 
+      idm1634016752 [label = "SgFunctionParameterList", shape=record, style=rounded]; idm1634014064 -> idm1634016752; 
+      idm1634017520 [label = "SgFunctionDefinition", shape=record, style=rounded]; idm1634014064 -> idm1634017520; 
+      idm1634018544 [label = "SgBasicBlock", shape=record, style=rounded]; idm1634017520 -> idm1634018544; 
+      idm1634013296 [label = "SgFortranDo|style=0|end=1|nlabel=|slabel=", shape=record, style=rounded]; idm1634018544 -> idm1634013296; 
+      idm1634012528 [label = "SgAssignOp", shape=record, style=rounded]; idm1634013296 -> idm1634012528; 
+      idm1634012272 [label = "SgVarRefExp|name=I", shape=record, style=rounded]; idm1634012528 -> idm1634012272; 
+      idm1634011888 [label = "SgIntVal|value=1|string=1", shape=record, style=rounded]; idm1634012528 -> idm1634011888; 
+      idm1634011248 [label = "SgIntVal|value=15|string=15", shape=record, style=rounded]; idm1634013296 -> idm1634011248; 
+      idm1634010736 [label = "SgNullExpression", shape=record, style=rounded]; idm1634013296 -> idm1634010736; 
+      idm1634024176 [label = "SgBasicBlock", shape=record, style=rounded]; idm1634013296 -> idm1634024176; 
+      idm1634025456 [label = "SgFortranDo|style=0|end=1|nlabel=|slabel=", shape=record, style=rounded]; idm1634024176 -> idm1634025456; 
+      idm1634023664 [label = "SgAssignOp", shape=record, style=rounded]; idm1634025456 -> idm1634023664; 
+      idm1634024304 [label = "SgVarRefExp|name=J", shape=record, style=rounded]; idm1634023664 -> idm1634024304; 
+      idm1634025200 [label = "SgIntVal|value=1|string=1", shape=record, style=rounded]; idm1634023664 -> idm1634025200; 
+      idm1634027888 [label = "SgIntVal|value=25|string=25", shape=record, style=rounded]; idm1634025456 -> idm1634027888; 
+      idm1634029936 [label = "SgNullExpression", shape=record, style=rounded]; idm1634025456 -> idm1634029936; 
+      idm1634030448 [label = "SgBasicBlock", shape=record, style=rounded]; idm1634025456 -> idm1634030448; 
+      idm1633921200 [label = "SgPragmaDeclaration", shape=record, style=rounded]; idm1634030448 -> idm1633921200; 
+      idm1633920944 [label = "SgPragma|pragma=xev var replace(SUM, TASU)", shape=record, style=rounded]; idm1633921200 -> idm1633920944; 
+      idm1633920432 [label = "SgExprStatement", shape=record, style=rounded]; idm1634030448 -> idm1633920432; 
+      idm1633920176 [label = "SgAssignOp", shape=record, style=rounded]; idm1633920432 -> idm1633920176; 
+      idm1633919920 [label = "SgVarRefExp|name=SUM", shape=record, style=rounded]; idm1633920176 -> idm1633919920; 
+      idm1633919536 [label = "SgAddOp", shape=record, style=rounded]; idm1633920176 -> idm1633919536; 
+      idm1633919280 [label = "SgVarRefExp|name=SUM", shape=record, style=rounded]; idm1633919536 -> idm1633919280; 
+      idm1633918896 [label = "SgIntVal|value=5|string=5", shape=record, style=rounded]; idm1633919536 -> idm1633918896; 
+      idm1633918128 [label = "PreprocessingInfo|pos=2|type=3", shape=record, style=rounded]; idm1633920432 -> idm1633918128; 
+      idm1633917744_text [label = "!$xev var replace(SUM, TASU)", shape=box, fillcolor=white, style="rounded,filled"]; idm1633918128 -> idm1633917744_text; 
+      idm1633916848 [label = "SgReturnStmt", shape=record, style=rounded]; idm1634018544 -> idm1633916848; 
+      idm1633916592 [label = "SgNullExpression", shape=record, style=rounded]; idm1633916848 -> idm1633916592; 
+      idm1633915952 [label = "SgInitializedName|name=SAMPLE02", shape=record, style=rounded]; idm1634014064 -> idm1633915952; 
+      idm1633915568 [label = "SgTypeVoid", shape=record, style=rounded]; idm1633915952 -> idm1633915568; 
+      }
